@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../images/logo.svg';
+import './MainScreen.css';
 
-class App extends Component {
+class MainScreen extends Component {
   render() {
+    console.log('holaaaaaaa')
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="container">
+        <header className="mainScreen">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +18,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            CLASE 4!!!!
           </a>
         </header>
       </div>
@@ -25,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default MainScreen;
