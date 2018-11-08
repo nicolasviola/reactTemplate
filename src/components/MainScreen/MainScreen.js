@@ -14,11 +14,11 @@ class MainScreen extends Component {
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://goo.gl/ryMXJh"
             target="_blank"
             rel="noopener noreferrer"
           >
-            CLASE 4!!!!
+            Click aquí para acceder al Drive del curso
           </a>
         </header>
       </div>
