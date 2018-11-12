@@ -1,0 +1,14 @@
+.headerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: blue;
+}
+
+.headerTitleContainer {
+  background-color: blue;
+  color: black;
+  font-size: 30px;
+}

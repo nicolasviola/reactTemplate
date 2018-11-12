@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
-import logo from '../../images/logo.svg';
+import Header from './Header/Header.js'
 import './MainScreen.css';
 
 class MainScreen extends Component {
+  state = {
+    isClicking: false,
+    title: 'pepito',
+    description: 'Es crack',
+  }
   render() {
-    console.log('holaaaaaaa')
+    console.log(this.state)
     return (
       <div className="container">
-        <header className="mainScreen">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://goo.gl/ryMXJh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click aquí para acceder al Drive del curso
-          </a>
-        </header>
+        <Header title='Clase 5'/>
+        <div className="mainScreenBody">
+          {this.state.isClicking
+            ? 'Es crack'
+            : 'No es crack mailisimo'
+          }
+        </div>
+        <button
+          className="mainScreenButton"
+          onClick={
+            () => this.setState({
+              isClicking: !this.state.isClicking,
+            })
+          }
+        >
+          LALALALAL
+        </button>
+        <Header title='CopyRight'/>
       </div>
     );
   }
